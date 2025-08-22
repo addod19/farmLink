@@ -86,6 +86,7 @@ npm start
 ##   📸 Screenshots
 ![Header](./screenshots/one.png)
 ![Services](./screenshots/two.png)
+![Getting Started](./screenshots/gettingStarted.png)
 ![About Us](./screenshots/three.png)
 ![Contact Us](./screenshots/four.png)
 
