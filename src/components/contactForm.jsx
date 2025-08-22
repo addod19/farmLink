@@ -1,5 +1,9 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
+
+const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
 const ContactForm = () => {
   const form = useRef(null);
@@ -15,10 +19,10 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "service_kdslfir",
-        "template_wcshe7l",
+        serviceId,
+        templateId,
         form.current,
-        "01AUrtrlzsFxgrT_I"
+        publicKey
       )
       .then(
         (result) => {

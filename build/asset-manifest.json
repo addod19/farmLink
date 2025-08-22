@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/magicult/static/css/main.bd2fcf9d.css",
-    "main.js": "/magicult/static/js/main.76b6ec00.js",
+    "main.js": "/magicult/static/js/main.ee2245d7.js",
     "static/js/453.726c5cb1.chunk.js": "/magicult/static/js/453.726c5cb1.chunk.js",
     "static/media/nunito-sans-latin-ext-400-normal.woff": "/magicult/static/media/nunito-sans-latin-ext-400-normal.a67bbf16bccea885c8f0.woff",
     "static/media/nunito-sans-latin-ext-700-normal.woff": "/magicult/static/media/nunito-sans-latin-ext-700-normal.feed8ce0589597d2e440.woff",
@@ -25,11 +25,11 @@
     "static/media/nunito-sans-vietnamese-400-normal.woff2": "/magicult/static/media/nunito-sans-vietnamese-400-normal.30006829d5ac51bab9b5.woff2",
     "index.html": "/magicult/index.html",
     "main.bd2fcf9d.css.map": "/magicult/static/css/main.bd2fcf9d.css.map",
-    "main.76b6ec00.js.map": "/magicult/static/js/main.76b6ec00.js.map",
+    "main.ee2245d7.js.map": "/magicult/static/js/main.ee2245d7.js.map",
     "453.726c5cb1.chunk.js.map": "/magicult/static/js/453.726c5cb1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bd2fcf9d.css",
-    "static/js/main.76b6ec00.js"
+    "static/js/main.ee2245d7.js"
   ]
 }
