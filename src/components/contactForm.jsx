@@ -4,10 +4,12 @@ import emailjs from "emailjs-com";
 const ContactForm = () => {
   const form = useRef(null);
   const [status, setStatus] = useState("");
+  const [buttonState, setButtonState] = useState("idle");
 
-
-  const sendMail = (e) => {
+  const sendMail = async(e) => {
     e.preventDefault();
+
+    setButtonState("loading");
 
     if (!form.current) return;
 
@@ -22,11 +24,13 @@ const ContactForm = () => {
         (result) => {
           console.log(result.text);
           setStatus("Message sent successfully ✅!");
+          setButtonState("success");
           form.current?.reset();
         },
         (error) => {
           console.error(error.text);
           setStatus("Failed to send message ❌, try again later.");
+          setButtonState("idle");
         }
       );
   };
@@ -72,9 +76,19 @@ const ContactForm = () => {
                 </div>
 
                 <div className="d-grid">
-                  <button type="submit" className="btn btn-success btn-lg">
-                    Send Message
+                  <button
+                    type="submit"
+                    className={`btn btn-success btn-lg
+                      ${buttonState === "idle" ? "bg-green-600 hover:bg-green-700" : ""}
+                      ${buttonState === "loading" ? "bg-yellow-500 cursor-wait" : ""}
+                      ${buttonState === "success" ? "bg-blue-600" : ""}
+                    `}
+                  >
+                    {buttonState === "idle" && "Send Message"}
+                    {buttonState === "loading" && "Sending..."}
+                    {buttonState === "success" && "Message Sent!"}
                   </button>
+
                 </div>
               </form>
               {status && <p className="mt-3 text-center">{status}</p>}
