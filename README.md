@@ -84,7 +84,10 @@ npm start
 ```
 
 ##   📸 Screenshots
-Homepage
+![Header](./screenshots/one.png)
+![Services](./screenshots/two.png)
+![About Us](./screenshots/three.png)
+![Contact Us](./screenshots/four.png)
 
 Get Started Modal
 
