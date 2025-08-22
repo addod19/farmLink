@@ -1,7 +1,12 @@
 import { useState } from 'react';
+import GettingStarted from './gettingStarted';
 
 const Header = () => {
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+    const [showModal, setShowModal] = useState(false);
+
+    const handleShow = () => setShowModal(true);
+    const handleClose = () => setShowModal(false);
 
     return (
         <div className="bg-light text-dark">
@@ -33,8 +38,9 @@ const Header = () => {
                         </ul>
                     </div>
                 </nav>
-                <button className="btn btn-success rounded-pill">Get Started</button>
+                {/* <button className="btn btn-success rounded-pill" onClick={handleShow}>Get Started</button> */}
             </header>
+            <GettingStarted show={showModal} handleClose={handleClose} />
         </div>
         
     );
