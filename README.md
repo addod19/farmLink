@@ -114,7 +114,8 @@ This project is licensed under the MIT License.
 
 For questions, partnerships, or support:
 📩 Email: support@magicult.com
+📱 Phone: +233207312909
 
-🌍 Website: www.magicult.com
+🌍 Website: [www.magicult.com](https://addod19.github.io/magicult/)
 
 ⚡ Magicult – Export made simple, partnerships made powerful.
