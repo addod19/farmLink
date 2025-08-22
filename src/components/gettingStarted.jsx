@@ -35,7 +35,7 @@ const GettingStarted = () => {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={() => alert("Redirect to Signup!")}>
+          <Button variant="primary">
             Join Now
           </Button>
         </Modal.Footer>
