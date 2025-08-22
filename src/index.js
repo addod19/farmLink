@@ -3,13 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import "@fontsource/nunito-sans"; // Defaults to 400 weight
-import "@fontsource/nunito-sans/700.css"; // For bold
+import { BrowserRouter as Router } from "react-router-dom";
+import "@fontsource/nunito-sans";
+import "@fontsource/nunito-sans/700.css";
+
+const basename = process.env.NODE_ENV === "production" ? "/magicult" : "/";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router basename={basename}>
+      <App />
+    </Router>
   </React.StrictMode>
 );
 

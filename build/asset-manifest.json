@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/magicult/static/css/main.bd2fcf9d.css",
+    "main.js": "/magicult/static/js/main.76b6ec00.js",
+    "static/js/453.726c5cb1.chunk.js": "/magicult/static/js/453.726c5cb1.chunk.js",
+    "static/media/nunito-sans-latin-ext-400-normal.woff": "/magicult/static/media/nunito-sans-latin-ext-400-normal.a67bbf16bccea885c8f0.woff",
+    "static/media/nunito-sans-latin-ext-700-normal.woff": "/magicult/static/media/nunito-sans-latin-ext-700-normal.feed8ce0589597d2e440.woff",
+    "static/media/nunito-sans-latin-400-normal.woff": "/magicult/static/media/nunito-sans-latin-400-normal.5b277f885f53cac36ea9.woff",
+    "static/media/nunito-sans-latin-700-normal.woff": "/magicult/static/media/nunito-sans-latin-700-normal.7852e4d90e36029e7316.woff",
+    "static/media/nunito-sans-latin-400-normal.woff2": "/magicult/static/media/nunito-sans-latin-400-normal.7ce61d153c12f1fc6e2b.woff2",
+    "static/media/nunito-sans-latin-700-normal.woff2": "/magicult/static/media/nunito-sans-latin-700-normal.84f72b5e85016bbdf330.woff2",
+    "static/media/nunito-sans-latin-ext-400-normal.woff2": "/magicult/static/media/nunito-sans-latin-ext-400-normal.77927cabd0857c13ae89.woff2",
+    "static/media/nunito-sans-latin-ext-700-normal.woff2": "/magicult/static/media/nunito-sans-latin-ext-700-normal.c86fad88d92c91579a34.woff2",
+    "static/media/nunito-sans-cyrillic-ext-400-normal.woff": "/magicult/static/media/nunito-sans-cyrillic-ext-400-normal.d50263fc14a039450570.woff",
+    "static/media/nunito-sans-cyrillic-ext-700-normal.woff": "/magicult/static/media/nunito-sans-cyrillic-ext-700-normal.4e89025a576496e0c818.woff",
+    "static/media/nunito-sans-cyrillic-400-normal.woff": "/magicult/static/media/nunito-sans-cyrillic-400-normal.7b324b609a4be0209a4b.woff",
+    "static/media/nunito-sans-cyrillic-700-normal.woff": "/magicult/static/media/nunito-sans-cyrillic-700-normal.322b1a5f14f727094852.woff",
+    "static/media/nunito-sans-cyrillic-ext-400-normal.woff2": "/magicult/static/media/nunito-sans-cyrillic-ext-400-normal.e56560ddbf70cfcd11a0.woff2",
+    "static/media/nunito-sans-cyrillic-ext-700-normal.woff2": "/magicult/static/media/nunito-sans-cyrillic-ext-700-normal.124d54cf6b02b62a6227.woff2",
+    "static/media/nunito-sans-vietnamese-400-normal.woff": "/magicult/static/media/nunito-sans-vietnamese-400-normal.e66452ef00342981101e.woff",
+    "static/media/nunito-sans-vietnamese-700-normal.woff": "/magicult/static/media/nunito-sans-vietnamese-700-normal.db53bfe2a4606ae331a2.woff",
+    "static/media/nunito-sans-cyrillic-400-normal.woff2": "/magicult/static/media/nunito-sans-cyrillic-400-normal.d35d65e764b55cf431aa.woff2",
+    "static/media/nunito-sans-cyrillic-700-normal.woff2": "/magicult/static/media/nunito-sans-cyrillic-700-normal.26e6ac0c711810aeb47d.woff2",
+    "static/media/nunito-sans-vietnamese-700-normal.woff2": "/magicult/static/media/nunito-sans-vietnamese-700-normal.3d04d332e0bdf611903b.woff2",
+    "static/media/nunito-sans-vietnamese-400-normal.woff2": "/magicult/static/media/nunito-sans-vietnamese-400-normal.30006829d5ac51bab9b5.woff2",
+    "index.html": "/magicult/index.html",
+    "main.bd2fcf9d.css.map": "/magicult/static/css/main.bd2fcf9d.css.map",
+    "main.76b6ec00.js.map": "/magicult/static/js/main.76b6ec00.js.map",
+    "453.726c5cb1.chunk.js.map": "/magicult/static/js/453.726c5cb1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd2fcf9d.css",
+    "static/js/main.76b6ec00.js"
+  ]
+}
