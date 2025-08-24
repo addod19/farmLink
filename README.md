@@ -1,6 +1,6 @@
-#   🌍 Magicult
+#   🌍 LinkFarm
 
-Magicult is a modern export partnership platform that connects businesses with global buyers. With a focus on African exports like charcoal, food crops, and spices, Magicult simplifies the onboarding process, provides clear guidance, and empowers partners to scale their export business efficiently.
+LinkFarm is a modern export partnership platform that connects businesses with global buyers. With a focus on African exports like charcoal, food crops, and spices, Magicult simplifies the onboarding process, provides clear guidance, and empowers partners to scale their export business efficiently.
 
 ##   ✨ Features
 
@@ -118,4 +118,4 @@ For questions, partnerships, or support:
 
 🌍 Website: [www.magicult.com](https://addod19.github.io/magicult/)
 
-⚡ Magicult – Export made simple, partnerships made powerful.
+⚡ LinkFarm – Export made simple, partnerships made powerful.
