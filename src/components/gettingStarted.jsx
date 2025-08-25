@@ -1,21 +1,66 @@
 import { useState } from "react";
-import { Modal, Button } from "react-bootstrap";
+import { Modal, Button, Form } from "react-bootstrap";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import emailjs from "@emailjs/browser";
+import { saveAppointment } from "../services/appointmentService";
+
+const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
 const GettingStarted = () => {
   const [show, setShow] = useState(false);
   const [showCalendar, setShowCalendar] = useState(false);
   const [selectedDate, setSelectedDate] = useState(null);
+  const [email, setEmail] = useState("");
+   const [loading, setLoading] = useState(false);
 
   const handleShow = () => setShow(true);
   const handleClose = () => {
     setShow(false);
     setShowCalendar(false);
+    setSelectedDate(null);
+    setEmail("");
   };
 
   const handleBook = () => setShowCalendar(true);
+
+  const handleConfirm = async () => {
+    if (!selectedDate || !email) {
+      alert("Please enter your email and select a date.");
+      return;
+    }
+
+    const appointmentData = {
+      user_email: email,
+      appointment_date: selectedDate.toISOString(),
+    };
+
+    console.log("Using EmailJS IDs:", serviceId, templateId, publicKey);
+
+    try {
+      setLoading(true);
+      await emailjs.send(
+        serviceId,
+        templateId,
+        appointmentData,
+        publicKey
+      );
+
+      // 2️⃣ Save to Firebase Firestore
+      await saveAppointment(email, selectedDate.toISOString());
+
+      alert(`✅ Appointment booked for ${selectedDate.toDateString()}`);
+      handleClose();
+    } catch (error) {
+      console.error("Booking error:", error);
+      alert("❌ Failed to book appointment. Try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="text-center my-5">
@@ -80,6 +125,16 @@ const GettingStarted = () => {
                   ✅ You selected: <b>{selectedDate.toDateString()}</b>
                 </p>
               )}
+
+              <Form.Group className="mt-3">
+                <Form.Label>Email Address</Form.Label>
+                <Form.Control
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </Form.Group>
             </div>
           )}
         </Modal.Body>
@@ -98,13 +153,10 @@ const GettingStarted = () => {
           ) : (
             <Button
               variant="success"
-              disabled={!selectedDate}
-              onClick={() => {
-                alert(`Appointment booked for ${selectedDate.toDateString()}`);
-                handleClose();
-              }}
+              disabled={!selectedDate || loading}
+              onClick={handleConfirm}
             >
-              Confirm Appointment
+              {loading ? "Loading..." : "Confirm Appointment"}
             </Button>
           )}
         </Modal.Footer>
