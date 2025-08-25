@@ -6,10 +6,14 @@ const Hero = () => {
   const [showServices, setShowServices] = useState(false);
 
   const services = [
-    { title: "Charcoals", description: "High-quality charcoal for export." },
-    { title: "Food Crops", description: "Fresh agricultural produce for global markets." },
-    { title: "Shea Butter", description: "Organic shea butter sourced responsibly." },
-    { title: "Cashew Nuts", description: "Premium cashews for export." },
+    { title: "Charcoals", description: "High-quality charcoal for export.",
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/87/Charcoal_briquets.jpg" },
+    { title: "Food Crops", description: "Fresh agricultural produce for global markets.",
+      image: "https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg" },
+    { title: "Shea Butter", description: "Organic shea butter sourced responsibly.",
+      image: "https://upload.wikimedia.org/wikipedia/commons/7/75/Sheabutter_01.png" },
+    { title: "Cashew Nuts", description: "Premium cashews for export.",
+      image: "https://images.pexels.com/photos/18876242/pexels-photo-18876242.jpeg" },
   ];
 
   return (
@@ -20,16 +24,18 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          Export Fresh Agricultural Products Worldwide
+           Connecting Africa’s Farms to the World 🌍
         </motion.h2>
-        <p className="lead text-muted mb-4">
-          We connect farmers to global markets with high-quality, sustainable agricultural products.
+        <p className="lead text-muted mb-4" style={{ fontSize: "14px" }}>
+          At LinkFarm, we bridge the gap between local farmers and international markets,
+          delivering fresh, sustainable, and organic agricultural products globally.
         </p>
 
         {/* Bootstrap button */}
         <button
           onClick={() => setShowServices(!showServices)}
           className="btn btn-success btn-lg d-inline-flex align-items-center gap-2"
+          style={{ fontSize: '1rem' }}
         >
           {showServices ? "Hide Services" : "Explore Our Services"} 
           <ArrowRight size={20} />
@@ -55,11 +61,21 @@ const Hero = () => {
                 className="col-12 col-md-6 mb-4"
               >
                 <div className="card shadow-sm h-100">
-                  <div className="card-body">
-                    <h3 className="h5 fw-bold text-success">{service.title}</h3>
-                    <p className="text-muted mt-2">{service.description}</p>
+                  <img 
+                    src={service.image} 
+                    alt={service.title} 
+                    className="card-img-top"
+                    style={{ height: "200px", objectFit: "cover" }}
+                  />
+                  
+                  <div className="card shadow-sm h-100">
+                    <div className="card-body" style={{ fontSize: "14px" }}>
+                      <h3 className="h5 fw-bold text-success">{service.title}</h3>
+                      <p className="text-muted mt-2">{service.description}</p>
+                    </div>
                   </div>
                 </div>
+                
               </motion.div>
             ))}
           </motion.div>

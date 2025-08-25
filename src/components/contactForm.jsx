@@ -87,6 +87,7 @@ const ContactForm = () => {
                       ${buttonState === "loading" ? "bg-yellow-500 cursor-wait" : ""}
                       ${buttonState === "success" ? "bg-blue-600" : ""}
                     `}
+                    style={{ fontSize: '1rem' }}
                   >
                     {buttonState === "idle" && "Send Message"}
                     {buttonState === "loading" && "Sending..."}

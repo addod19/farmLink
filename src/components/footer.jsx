@@ -1,7 +1,9 @@
 const Footer = () => {
     return (
-        <footer className="text-center py-6 text-muted border-top mt-4">
-            © {new Date().getFullYear()} MagiCult. All rights reserved.
+        <footer className="text-center py-4 text-white mt-4" style={{ background: "linear-gradient(45deg, #198754, #28a745, #ffffff)" }}>
+            © {new Date().getFullYear()} LinkFarm. All rights reserved.  
+            <br />
+            <small className="text-light">Sustainable Agriculture • Global Trade • Farmer Empowerment</small>
         </footer>
     );
 }
