@@ -34,8 +34,8 @@ const GettingStarted = () => {
     }
 
     const appointmentData = {
-      user_email: email,
-      appointment_date: selectedDate.toISOString(),
+      email,
+      appointmentDate: selectedDate.toISOString(),
     };
 
     console.log("Using EmailJS IDs:", serviceId, templateId, publicKey);
@@ -156,7 +156,7 @@ const GettingStarted = () => {
               disabled={!selectedDate || loading}
               onClick={handleConfirm}
             >
-              {loading ? "Loading..." : "Confirm Appointment"}
+              { loading ? "Loading..." : "Confirm Appointment" }
             </Button>
           )}
         </Modal.Footer>
