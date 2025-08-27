@@ -14,12 +14,13 @@ const Header = () => {
         <div className="bg-light text-dark">
             <header className="container py-3">
                 <nav className="navbar navbar-expand-md navbar-light">
-                    <img
-                        src={logo}
-                        alt="farmLink Logo"
-                        style={{ height: "50px" }}
-                    />
-                    <Link to="/" className="navbar-brand fw-bold text-success fs-3 font-nunito">FarmLink</Link>
+                    <Link to="/" className="navbar-brand fw-bold text-success fs-3 font-nunito">
+                        <img
+                            src={logo}
+                            alt="FarmLink Logo"
+                            style={{ height: "50px" }}
+                        />
+                    </Link>
                     <button
                         className='navbar-toggler'
                         type='button'
