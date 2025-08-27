@@ -2,7 +2,7 @@ import { useState } from 'react';
 import GettingStarted from './gettingStarted';
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import logo from "../assets/link_farm_logo.png";
+import logo from "../assets/farmlink.png";
 
 const Header = () => {
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
@@ -19,7 +19,7 @@ const Header = () => {
                         alt="farmLink Logo"
                         style={{ height: "50px" }}
                     />
-                    <Link to="/" className="navbar-brand fw-bold text-success fs-3 font-nunito">LinkFarm</Link>
+                    <Link to="/" className="navbar-brand fw-bold text-success fs-3 font-nunito">FarmLink</Link>
                     <button
                         className='navbar-toggler'
                         type='button'

@@ -47,7 +47,6 @@ const ContactForm = () => {
             <div className="card-body p-4 bg-light">
               <form ref={form} onSubmit={sendMail}>
                 <div className="mb-3">
-                  <label className="form-label">Your Name</label>
                   <input
                     type="text"
                     name="user_name"
@@ -58,7 +57,6 @@ const ContactForm = () => {
                 </div>
 
                 <div className="mb-3">
-                  <label className="form-label">Your Email</label>
                   <input
                     type="user_email"
                     name="email"
@@ -69,7 +67,6 @@ const ContactForm = () => {
                 </div>
 
                 <div className="mb-3">
-                  <label className="form-label">Your Message</label>
                   <textarea
                     name="message"
                     className="form-control"

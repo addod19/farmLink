@@ -27,11 +27,10 @@ const Hero = () => {
            Connecting Africa’s Farms to the World 🌍
         </motion.h2>
         <p className="lead text-muted mb-4" style={{ fontSize: "14px" }}>
-          At LinkFarm, we bridge the gap between local farmers and international markets,
+          At FarmLink, we bridge the gap between local farmers and international markets,
           delivering fresh, sustainable, and organic agricultural products globally.
         </p>
 
-        {/* Bootstrap button */}
         <button
           onClick={() => setShowServices(!showServices)}
           className="btn btn-success btn-lg d-inline-flex align-items-center gap-2"

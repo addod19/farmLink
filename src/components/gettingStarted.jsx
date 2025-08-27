@@ -75,7 +75,6 @@ const GettingStarted = () => {
 
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header className="d-flex justify-content-between align-items-center">
-          {/* Custom close button on the left */}
           <Button
             variant="link"
             onClick={handleClose}
@@ -84,12 +83,10 @@ const GettingStarted = () => {
             ✖
           </Button>
 
-          {/* Centered title */}
           <Modal.Title className="flex-grow-1 text-center">
             Getting Started 🚀
           </Modal.Title>
 
-          {/* Spacer for balance */}
           <div style={{ width: "24px" }}></div>
         </Modal.Header>
 
@@ -140,12 +137,10 @@ const GettingStarted = () => {
         </Modal.Body>
 
         <Modal.Footer className="d-flex justify-content-between">
-          {/* Left-aligned Close button */}
           <Button variant="danger" onClick={handleClose}>
             Close
           </Button>
 
-          {/* Right-aligned Book button */}
           {!showCalendar ? (
             <Button variant="primary" onClick={handleBook}>
               Book an appointment

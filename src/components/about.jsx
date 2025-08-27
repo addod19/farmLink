@@ -1,10 +1,10 @@
 const About = () => {
     return (
         <section id="about" className="py-5 text-center container">
-            <h2 className="h2 fw-bold text-success mb-3">Why Partner with LinkFarm?</h2>
+            <h2 className="h2 fw-bold text-success mb-3">Why Partner with FarmLink?</h2>
             <p className="lead text-secondary mb-3" style={{ fontSize: "14px" }}>
                 We believe in fair trade, sustainable agriculture, and empowering local farmers.
-                By choosing LinkFarm, you get quality-assured products, transparent sourcing, 
+                By choosing FarmLink, you get quality-assured products, transparent sourcing, 
                 and a trusted partner dedicated to building long-term global trade relationships.
             </p>
 
