@@ -5,6 +5,8 @@ import "react-datepicker/dist/react-datepicker.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import emailjs from "@emailjs/browser";
 import { saveAppointment } from "../services/appointmentService";
+import { generateICS, formatDateToICS } from "../utils/calendarUtils";
+
 
 const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
@@ -33,9 +35,24 @@ const GettingStarted = () => {
       return;
     }
 
+    const startDate = formatDateToICS(selectedDate);
+    const endDate = formatDateToICS(new Date(selectedDate.getTime() + 30 * 60000)); // 30 minutes later
+
+    const icsContent = generateICS(
+      "FarmLink Appointment",
+      "Meeting with the FarmLink team",
+      startDate,
+      endDate,
+      "Zoom / Online"
+    );
+
+    const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
+    const icsFileUrl = URL.createObjectURL(blob);
+
     const appointmentData = {
       email,
       appointmentDate: selectedDate.toISOString(),
+      calendarFile: icsFileUrl,
     };
 
     console.log("Using EmailJS IDs:", serviceId, templateId, publicKey);

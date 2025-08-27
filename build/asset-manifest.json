@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/farmLink/static/css/main.de1ac7ff.css",
-    "main.js": "/farmLink/static/js/main.b3ab53b7.js",
+    "main.js": "/farmLink/static/js/main.a42ca868.js",
     "static/js/453.726c5cb1.chunk.js": "/farmLink/static/js/453.726c5cb1.chunk.js",
     "static/media/farmlink.png": "/farmLink/static/media/farmlink.c5f8200930e15fa3e805.png",
     "static/media/nunito-sans-latin-ext-400-normal.woff": "/farmLink/static/media/nunito-sans-latin-ext-400-normal.a67bbf16bccea885c8f0.woff",
@@ -26,11 +26,11 @@
     "static/media/nunito-sans-vietnamese-400-normal.woff2": "/farmLink/static/media/nunito-sans-vietnamese-400-normal.30006829d5ac51bab9b5.woff2",
     "index.html": "/farmLink/index.html",
     "main.de1ac7ff.css.map": "/farmLink/static/css/main.de1ac7ff.css.map",
-    "main.b3ab53b7.js.map": "/farmLink/static/js/main.b3ab53b7.js.map",
+    "main.a42ca868.js.map": "/farmLink/static/js/main.a42ca868.js.map",
     "453.726c5cb1.chunk.js.map": "/farmLink/static/js/453.726c5cb1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.de1ac7ff.css",
-    "static/js/main.b3ab53b7.js"
+    "static/js/main.a42ca868.js"
   ]
 }
