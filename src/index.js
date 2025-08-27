@@ -7,7 +7,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "@fontsource/nunito-sans";
 import "@fontsource/nunito-sans/700.css";
 
-const basename = process.env.NODE_ENV === "production" ? "/magicult" : "/";
+const basename = process.env.NODE_ENV === "production" ? "/farmLink" : "/";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

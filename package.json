@@ -2,7 +2,7 @@
   "name": "qaf-export",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://addod19.github.io/magicult",
+  "homepage": "https://addod19.github.io/farmLink",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@fontsource/nunito-sans": "^5.2.6",
