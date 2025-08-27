@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/magicult/static/css/main.7bdf4af9.css",
-    "main.js": "/magicult/static/js/main.a111b8cc.js",
+    "main.js": "/magicult/static/js/main.df7c5a12.js",
     "static/js/453.726c5cb1.chunk.js": "/magicult/static/js/453.726c5cb1.chunk.js",
-    "static/media/link_farm_logo.png": "/magicult/static/media/link_farm_logo.93185b5933273c8f30da.png",
+    "static/media/farmlink.png": "/magicult/static/media/farmlink.c5f8200930e15fa3e805.png",
     "static/media/nunito-sans-latin-ext-400-normal.woff": "/magicult/static/media/nunito-sans-latin-ext-400-normal.a67bbf16bccea885c8f0.woff",
     "static/media/nunito-sans-latin-ext-700-normal.woff": "/magicult/static/media/nunito-sans-latin-ext-700-normal.feed8ce0589597d2e440.woff",
     "static/media/nunito-sans-latin-400-normal.woff": "/magicult/static/media/nunito-sans-latin-400-normal.5b277f885f53cac36ea9.woff",
@@ -26,11 +26,11 @@
     "static/media/nunito-sans-vietnamese-400-normal.woff2": "/magicult/static/media/nunito-sans-vietnamese-400-normal.30006829d5ac51bab9b5.woff2",
     "index.html": "/magicult/index.html",
     "main.7bdf4af9.css.map": "/magicult/static/css/main.7bdf4af9.css.map",
-    "main.a111b8cc.js.map": "/magicult/static/js/main.a111b8cc.js.map",
+    "main.df7c5a12.js.map": "/magicult/static/js/main.df7c5a12.js.map",
     "453.726c5cb1.chunk.js.map": "/magicult/static/js/453.726c5cb1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7bdf4af9.css",
-    "static/js/main.a111b8cc.js"
+    "static/js/main.df7c5a12.js"
   ]
 }
