@@ -5,7 +5,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import emailjs from "@emailjs/browser";
 import { saveAppointment } from "../services/appointmentService";
-import { generateICS, formatDateToICS } from "../utils/calendarUtils";
+import generateGoogleCalendarLink from "../utils/generateGoogleCalendarLink";
 
 
 const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
@@ -35,24 +35,21 @@ const GettingStarted = () => {
       return;
     }
 
-    const startDate = formatDateToICS(selectedDate);
-    const endDate = formatDateToICS(new Date(selectedDate.getTime() + 30 * 60000)); // 30 minutes later
+    const startDate = selectedDate;
+    const endDate = new Date(selectedDate.getTime() + 30 * 60000);
 
-    const icsContent = generateICS(
-      "FarmLink Appointment",
-      "Meeting with the FarmLink team",
+    const calendarLink = generateGoogleCalendarLink({
+      title: "FarmLink Appointment",
+      details: "Meeting with the FarmLink team",
+      location: "Zoom / Online",
       startDate,
       endDate,
-      "Zoom / Online"
-    );
-
-    const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
-    const icsFileUrl = URL.createObjectURL(blob);
+    });
 
     const appointmentData = {
       email,
       appointmentDate: selectedDate.toISOString(),
-      calendarFile: icsFileUrl,
+      calendarLink,
     };
 
     console.log("Using EmailJS IDs:", serviceId, templateId, publicKey);
@@ -62,7 +59,21 @@ const GettingStarted = () => {
       await emailjs.send(
         serviceId,
         templateId,
-        appointmentData,
+        {
+          ...appointmentData,
+          to_email: "addodaniellarbi@gmail.com",
+          user_email: email,
+        },
+        publicKey
+      );
+
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          ...appointmentData,
+          to_email: email
+        },
         publicKey
       );
 
