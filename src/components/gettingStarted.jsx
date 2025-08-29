@@ -96,9 +96,15 @@ const GettingStarted = () => {
         variant="success"
         size="lg"
         onClick={handleShow}
-        style={{ fontSize: "1rem" }}
+        style={{ 
+          fontSize: "1rem",
+          position: "fixed",
+          bottom: "20px",
+          right: "20px",
+          zIndex: 1000
+        }}
       >
-        Get Started
+        Book an appointment
       </Button>
 
       <Modal show={show} onHide={handleClose} centered>
@@ -119,25 +125,6 @@ const GettingStarted = () => {
         </Modal.Header>
 
         <Modal.Body>
-          {!showCalendar ? (
-            <>
-              <h5>How to Become a Partner</h5>
-              <ol className="mt-3">
-                <li>
-                  📩 <b>Reach out:</b> Contact us via the form below or email.
-                </li>
-                <li>📦 Select your export category.</li>
-                <li>
-                  🚢 <b>Kickstart:</b> Begin exporting high-quality agricultural
-                  goods worldwide.
-                </li>
-              </ol>
-
-              <div className="alert alert-success mt-4">
-                Ready to scale your export business? Let’s grow together!
-              </div>
-            </>
-          ) : (
             <div className="text-center">
               <h5>Select Appointment Date 📅</h5>
               <DatePicker
@@ -161,7 +148,6 @@ const GettingStarted = () => {
                 />
               </Form.Group>
             </div>
-          )}
         </Modal.Body>
 
         <Modal.Footer className="d-flex justify-content-between">
