@@ -6,13 +6,13 @@ const Hero = () => {
   const [showServices, setShowServices] = useState(false);
 
   const services = [
-    { title: "Charcoals", description: "High-quality charcoal for export.",
+    { title: "Export logistics & shipping", description: "We handle the entire export process—from documentation and packaging to international shipping—ensuring your commodities reach global markets efficiently and safely.",
       image: "https://upload.wikimedia.org/wikipedia/commons/8/87/Charcoal_briquets.jpg" },
-    { title: "Food Crops", description: "Fresh agricultural produce for global markets.",
+    { title: "Quality control", description: "Our team enforces strict quality assurance protocols, verifying that all agricultural products meet international standards and certification requirements.",
       image: "https://images.pexels.com/photos/143133/pexels-photo-143133.jpeg" },
-    { title: "Shea Butter", description: "Organic shea butter sourced responsibly.",
+    { title: "Market linkage for farmers", description: "We connect local farmers and cooperatives with global buyers, creating sustainable trade opportunities and ensuring fair prices for producers.",
       image: "https://upload.wikimedia.org/wikipedia/commons/7/75/Sheabutter_01.png" },
-    { title: "Cashew Nuts", description: "Premium cashews for export.",
+    { title: "Bulk sourcing and supply", description: "We specialize in sourcing agricultural commodities in bulk, ensuring reliable supply chains, competitive pricing, and consistent quality for international clients.",
       image: "https://images.pexels.com/photos/18876242/pexels-photo-18876242.jpeg" },
   ];
 

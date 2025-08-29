@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.custom-caption {
+  background-color: transparent !important;
+}
+
+.custom-caption h3,
+.custom-caption p {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6) !important; /* soft shadow for readability */
+  color: #fff !important; /* ensure text is white */
+}
