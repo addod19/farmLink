@@ -12,7 +12,7 @@ const Hero = () => {
       image: "https://raw.githubusercontent.com/addod19/farmLink/210825v1/public/images/Farmer-assessing-quality.png" },
     { title: "Market linkage for farmers", description: "We connect local farmers and clients with global buyers, creating sustainable trade opportunities and ensuring fair prices for producers.",
       image: "https://raw.githubusercontent.com/addod19/farmLink/210825v1/public/images/linkf.png" },
-    { title: "Bulk sourcing and supply", description: "We specialize in sourcing agricultural commodities in bulk, ensuring reliable supply chains, competitive pricing, and consistent quality for international clients.",
+    { title: "Bulk sourcing and supply", description: "We specialize in sourcing agricultural commodities in bulk, ensuring reliable supply chains, competitive pricing, and consistent quality for clients.",
       image: "https://raw.githubusercontent.com/addod19/farmLink/210825v1/public/images/bult-sourcing.jpg" },
   ];
 
