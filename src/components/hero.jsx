@@ -6,18 +6,18 @@ const Hero = () => {
   const [showServices, setShowServices] = useState(true);
 
   const services = [
-    { title: "Export logistics & shipping", description: "We handle the entire export process—from documentation and packaging to international shipping—ensuring your commodities reach global markets efficiently and safely.",
+    { title: "Export logistics & shipping", description: "We handle the entire export process, from documentation and packaging to international shipping, ensuring your commodities reach global markets efficiently and safely.",
       image: "https://raw.githubusercontent.com/addod19/farmLink/210825v1/public/images/export-logistics.jpeg" },
     { title: "Quality control", description: "Our team enforces strict quality assurance protocols, verifying that all agricultural products meet international standards and certification requirements.",
       image: "https://raw.githubusercontent.com/addod19/farmLink/210825v1/public/images/Farmer-assessing-quality.png" },
-    { title: "Market linkage for farmers", description: "We connect local farmers and cooperatives with global buyers, creating sustainable trade opportunities and ensuring fair prices for producers.",
+    { title: "Market linkage for farmers", description: "We connect local farmers and clients with global buyers, creating sustainable trade opportunities and ensuring fair prices for producers.",
       image: "https://raw.githubusercontent.com/addod19/farmLink/210825v1/public/images/linkf.png" },
     { title: "Bulk sourcing and supply", description: "We specialize in sourcing agricultural commodities in bulk, ensuring reliable supply chains, competitive pricing, and consistent quality for international clients.",
       image: "https://raw.githubusercontent.com/addod19/farmLink/210825v1/public/images/bult-sourcing.jpg" },
   ];
 
   return (
-    <div className="container text-center py-5">
+    <div className="container text-center py-5" id="services">
       <section className="mx-auto my-5">
         <motion.h2
           className="display-4 fw-bold text-success mb-4"

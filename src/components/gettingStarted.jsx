@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import emailjs from "@emailjs/browser";
 import { saveAppointment } from "../services/appointmentService";
 import generateGoogleCalendarLink from "../utils/generateGoogleCalendarLink";
+import bookAppointment from "../assets/book-appointment.png";
 
 
 const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
@@ -101,10 +102,26 @@ const GettingStarted = () => {
           position: "fixed",
           bottom: "20px",
           right: "20px",
-          zIndex: 1000
+          zIndex: 1000,
+          backgroundColor: "transparent",
+          border: "2px solid #28a745",
+          borderRadius: "50%",
+          width: "40px",
+          height: "40px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: "0",
         }}
       >
-        Book an appointment
+        <img
+          src={bookAppointment}
+          alt="Appointment"
+          width="20"
+          height="20"
+          className="me-2"
+          style={{ margin: "auto" }}
+        />
       </Button>
 
       <Modal show={show} onHide={handleClose} centered>

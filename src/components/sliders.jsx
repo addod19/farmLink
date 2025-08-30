@@ -1,28 +1,31 @@
 import { Carousel } from "react-bootstrap";
+import processed from "../assets/palm_oil_in_glass_bowl.png"
+import animal from "../assets/group1.jpeg"
+import commodities from "../assets/commodities.jpg"
 
 const slides = [
   {
     title: "Raw Commodities",
     description: "Fresh produce and raw materials sourced from trusted farmers.",
-    src: "https://images.pexels.com/photos/13612369/pexels-photo-13612369.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1600&h=900",
+    src: commodities,
     alt: "Commodities",
   },
   {
     title: "Processed Goods",
     description: "High-quality processed and packaged products.",
-    src: "https://images.pexels.com/photos/16211537/pexels-photo-16211537.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1600&h=900",
+    src: processed,
     alt: "Processed Goods",
   },
   {
     title: "Animal Products",
     description: "Fresh dairy, meat, and animal-derived products.",
-    src: "https://images.pexels.com/photos/18973339/pexels-photo-18973339.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1600&h=900",
+    src: animal,
     alt: "Animal Products",
   },
 ];
 
 const fallbackImage =
-  "https://github.com/addod19/farmLink/blob/210825v1/public/images/commodities.jpg";
+  "https://images.pexels.com/photos/13612369/pexels-photo-13612369.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1600&h=900";
 
 const Slider = () => {
   return (
