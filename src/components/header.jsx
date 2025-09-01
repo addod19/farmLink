@@ -11,6 +11,10 @@ const Header = () => {
 
   const handleClose = () => setShowModal(false);
 
+  const handleNavItemClick = () => {
+    setIsNavCollapsed(true);
+  };
+
   return (
     <div className="bg-light text-dark">
       <header className="container py-3">
@@ -33,13 +37,31 @@ const Header = () => {
           <div className={`collapse navbar-collapse ${isNavCollapsed ? '' : 'show'}`} id="navbarNav">
             <ul className="navbar-nav ms-auto mb-2 mb-md-0 gap-md-4" style={{ fontSize: "14px" }}>
               <li className="nav-item font-nunito">
-                <HashLink smooth to="/#services" className="nav-link text-decoration-none text-dark">Services</HashLink>
+                <HashLink
+                    smooth to="/#services"
+                    className="nav-link text-decoration-none text-dark"
+                    onClick={handleNavItemClick}
+                >
+                    Services
+                </HashLink>
               </li>
               <li className="nav-item">
-                <HashLink smooth to="/#about" className="nav-link text-decoration-none text-dark">About</HashLink>
+                <HashLink
+                    smooth to="/#about"
+                    className="nav-link text-decoration-none text-dark"
+                    onClick={handleNavItemClick}
+                >
+                    About
+                </HashLink>
               </li>
               <li className="nav-item">
-                <HashLink smooth to="/#contact" className="nav-link text-decoration-none text-dark">Contact</HashLink>
+                <HashLink
+                    smooth to="/#contact"
+                    className="nav-link text-decoration-none text-dark"
+                    onClick={handleNavItemClick}
+                >
+                    Contact
+                </HashLink>
               </li>
             </ul>
           </div>
