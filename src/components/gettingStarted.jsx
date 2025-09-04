@@ -94,7 +94,7 @@ const GettingStarted = () => {
   return (
     <div className="text-center my-5">
       <Button
-        variant="success"
+        variant="primary"
         size="lg"
         onClick={handleShow}
         style={{ 
@@ -103,7 +103,7 @@ const GettingStarted = () => {
           bottom: "20px",
           right: "20px",
           zIndex: 1000,
-          backgroundColor: "transparent",
+          backgroundColor: "rgba(128, 128, 128, 0.4)",
           border: "2px solid #28a745",
           borderRadius: "50%",
           width: "40px",
@@ -112,6 +112,14 @@ const GettingStarted = () => {
           justifyContent: "center",
           alignItems: "center",
           padding: "0",
+          boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
+          transition: "all 0.3s ease",
+        }}
+        onMouseOver={(e) => {
+          e.currentTarget.style.background = "rgba(40, 167, 69, 0.3)"; // green tint on hover
+        }}
+        onMouseOut={(e) => {
+          e.currentTarget.style.background = "rgba(128, 128, 128, 0.4)"; // back to gray
         }}
       >
         <img
